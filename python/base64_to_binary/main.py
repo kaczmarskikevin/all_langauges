@@ -1,8 +1,10 @@
 import base64
 import sys
 
-print(sys.argv[1])
-decoded = base64.b64decode(sys.argv[1])
+b64 = base64.b64decode(sys.argv[1])
 
-print(decoded)
-print(len(decoded)*8)
+print(b64)
+print(len(b64)*8)
+
+with open('output.bin', 'wb') as file:
+    file.write(b64)
