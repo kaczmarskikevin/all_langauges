@@ -10,4 +10,4 @@ PROG="$2"
 
 shift 2
 
-echo $(docker run kaczmarskikevin/$LANG-$PROG test)
+echo $(docker run kaczmarskikevin/$LANG-$PROG /bin/bash test)
