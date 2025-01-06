@@ -10,6 +10,6 @@ PROG="$2"
 
 shift 2
 
-mkdir -p /tmp/base64_to_binary
+mkdir -p /tmp/kkaczmarski-container
 
-echo $(docker run -v /tmp/base64_to_binary:/tmp kaczmarskikevin/$LANG-$PROG $@)
+echo $(docker run -v /tmp/kkaczmarski-container:/tmp kaczmarskikevin/$LANG-$PROG $@)
