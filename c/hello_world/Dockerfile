@@ -1,4 +1,4 @@
-FROM kaczmarskikevin/python
+FROM kaczmarskikevin/c
 
 COPY main.c main.c
 
