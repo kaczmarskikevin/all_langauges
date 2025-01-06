@@ -4,4 +4,4 @@ COPY main.c main.c
 
 RUN make .
 
-ENTRYPOINT ["./main"]
+ENTRYPOINT ["./main.o"]
