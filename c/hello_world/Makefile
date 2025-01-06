@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall
-TARGET = hello
+TARGET = helloworld
 
 all: $(TARGET)
 
