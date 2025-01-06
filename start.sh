@@ -1,9 +1,8 @@
 #!/bin/bash
 
-cd $1
-docker build -t kaczmarskikevin/$1 .
+docker build -t kaczmarskikevin/$1 /$1/
 cd $2
-docker build -t kaczmarskikevin/$1-$2 .
+docker build -t kaczmarskikevin/$1-$2 /$1-$2/
 
 LANG="$1"
 PROG="$2"
