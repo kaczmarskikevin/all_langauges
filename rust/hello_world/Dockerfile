@@ -2,4 +2,5 @@ FROM kaczmarskikevin/rust
 
 COPY . .
 
-RUN cargo run
+RUN cargo build && \
+    cargo run
