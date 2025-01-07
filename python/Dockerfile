@@ -1,6 +1,6 @@
 FROM debian:bookworm
 
-WORKDIR /
+WORKDIR /usr/src/myapp
 
 RUN apt-get update && \
     apt-get install -y python3

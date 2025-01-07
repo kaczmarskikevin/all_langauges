@@ -1,7 +1,6 @@
 FROM kaczmarskikevin/cpp
 
-COPY main.cpp main.cpp
-COPY Makefile Makefile
+COPY . .
 
 RUN make
 
