@@ -1,4 +1,4 @@
-FROM kaczmarskikevin/c
+FROM kaczmarskikevin/cpp
 
 COPY main.cpp main.cpp
 COPY Makefile Makefile
