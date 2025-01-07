@@ -1,4 +1,4 @@
-FROM kkaczmarski/rust
+FROM kaczmarskikevin/rust
 
 COPY . .
 
