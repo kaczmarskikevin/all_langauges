@@ -1,4 +1,4 @@
-CC = g++
+CXX = g++
 CFLAGS = -Wall
 TARGET = helloworld
 
