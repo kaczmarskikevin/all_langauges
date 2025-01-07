@@ -3,4 +3,4 @@ FROM debian:bookworm
 WORKDIR /
 
 RUN apt-get update && \
-    apt-get install -y g++ make
+    apt-get install -y build-essentials make
