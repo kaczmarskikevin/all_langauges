@@ -2,6 +2,6 @@ FROM kaczmarskikevin/rust
 
 COPY . .
 
-RUN cargo build && \
-    cargo run && \
-    cargo test
+RUN cargo build
+
+CMD ["cargo", "run"]
