@@ -1,4 +1,6 @@
-FROM kaczmarskikevin/rust
+FROM debian:bookworm
+
+WORKDIR /usr/src/myapp
 
 COPY . .
 
