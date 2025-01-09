@@ -2,6 +2,8 @@ FROM kaczmarskikevin/rust
 
 COPY . .
 
-RUN cargo build
+RUN apt-get update && \
+    apt-get install -y cmake && \
+    cargo build
 
 CMD ["cargo", "run"]
