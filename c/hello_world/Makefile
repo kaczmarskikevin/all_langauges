@@ -5,7 +5,7 @@ TARGET = helloworld
 all: $(TARGET)
 
 $(TARGET): main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c
+	$(CC) $(CFLAGS) -o $(TARGET) hello.c startup.c
 
 clean:
 	rm -f $(TARGET)
