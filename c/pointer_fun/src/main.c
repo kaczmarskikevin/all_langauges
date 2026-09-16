@@ -13,9 +13,10 @@ int main(void) {
 
     int* number_p = &number;
 
-    printf("pointer number_p address is %p!\n", &number_p);
-    printf("pointer number_p value is %p!\n", *number_p);
-    printf("pointer number_p value is %p!\n", number_p);
-    printf("pointer number_p value is %d!\n", *number_p);
-    printf("pointer number_p value is %d!\n", number_p);
+    printf("&number_p is %p!\n", &number_p);
+    printf("*number_p is %p!\n", *number_p);
+    printf("number_p is %p!\n", number_p);
+    printf("&number_p is %d!\n", &number_p);
+    printf("*number_p is %d!\n", *number_p);
+    printf("number_p is %d!\n", number_p);
 }
