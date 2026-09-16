@@ -17,7 +17,7 @@ int main(void) {
     printf("*number_p as int is %d\n", *number_p);
     printf("number_p as int is %d\n\n", number_p);
 
-    hello_t hello = {"hello\0"};
+    hello_t hello = { .phrase = "hello\0"};
     
     printf("&hello.phrase as pointer is %p\n", &hello.phrase);
     printf("*hello.phrase as pointer is %p\n", *hello.phrase);
@@ -27,9 +27,27 @@ int main(void) {
     printf("hello.phrase as string is %s\n", hello.phrase);
     printf("hello.phrase as hex is %x\n", hello.phrase);
     printf("hello.phrase as char is %c\n\n", hello.phrase);
+
     printf("*(&hello.phrase) as pointer is %p\n", *(&hello.phrase));
     printf("*(*(&hello.phrase)) as pointer is %p\n", *(*(&hello.phrase)));
     printf("*(hello.phrase) as pointer is %p\n", *(hello.phrase));
     printf("*(&hello.phrase) as pointer is %p\n", *(&hello.phrase));
     printf("hello.phrase as pointer is %p\n", hello.phrase);
+
+    hello_t hello1 = { .phrase = "hello1\0"};
+    
+    printf("&hello1.phrase as pointer is %p\n", &hello1.phrase);
+    printf("*hello1.phrase as pointer is %p\n", *hello1.phrase);
+    printf("*hello1.phrase as char is %c\n", *hello1.phrase);
+    printf("*hello1.phrase as hex is %x\n", *hello1.phrase);
+    printf("*hello1.phrase as string causes seg fault\n");
+    printf("hello1.phrase as string is %s\n", hello1.phrase);
+    printf("hello1.phrase as hex is %x\n", hello1.phrase);
+    printf("hello1.phrase as char is %c\n\n", hello1.phrase);
+
+    printf("*(&hello1.phrase) as pointer is %p\n", *(&hello1.phrase));
+    printf("*(*(&hello1.phrase)) as pointer is %p\n", *(*(&hello1.phrase)));
+    printf("*(hello1.phrase) as pointer is %p\n", *(hello1.phrase));
+    printf("*(&hello1.phrase) as pointer is %p\n", *(&hello1.phrase));
+    printf("hello1.phrase as pointer is %p\n", hello1.phrase);
 }
