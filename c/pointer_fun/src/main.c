@@ -30,6 +30,6 @@ int main(void) {
     printf("*(&hello.phrase) as pointer is %p\n", *(&hello.phrase));
     printf("*(*(&hello.phrase)) as pointer is %p\n", *(*(&hello.phrase)));
     printf("*(hello.phrase) as pointer is %p\n", *(hello.phrase));
-    printf("*(&hello.phrase) as pointer is %p\n", *(hello.phrase));
+    printf("*(&hello.phrase) as pointer is %p\n", *(&hello.phrase));
     printf("hello.phrase as pointer is %p\n", hello.phrase);
 }
