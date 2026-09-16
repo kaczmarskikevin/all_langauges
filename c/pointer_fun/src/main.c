@@ -20,10 +20,5 @@ int main(void) {
     hello_t hello = {"hello\0"};
     
     printf("&hello.phrase is %p!\n", &hello.phrase);
-    printf("*hello.phrase is %p!\n", *hello.phrase);
-    printf("hello.phrase is %p!\n", hello.phrase);
-    printf("&hello.phrase is %d!\n", &hello.phrase);
-    printf("*hello.phrase is %s!\n", *hello.phrase);
-    printf("hello.phrase is %d!\n", hello.phrase);
     
 }
