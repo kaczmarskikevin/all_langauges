@@ -12,5 +12,7 @@ int main(void) {
 
     printf("pointer number_p address is %p!\n", &number_p);
     printf("pointer number_p value is %p!\n", *number_p);
+    printf("pointer number_p value is %p!\n", number_p);
+    printf("pointer number_p value is %d!\n", *number_p);
     printf("pointer number_p value is %d!\n", number_p);
 }
