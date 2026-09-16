@@ -50,4 +50,21 @@ int main(void) {
     printf("*(hello1.phrase) as pointer is %p\n", *(hello1.phrase));
     printf("*(&hello1.phrase) as pointer is %p\n", *(&hello1.phrase));
     printf("hello1.phrase as pointer is %p\n\n", hello1.phrase);
+
+    hello_t hello2;
+    
+    printf("&hello2.phrase as pointer is %p\n", &hello2.phrase);
+    printf("*hello2.phrase as pointer is %p\n", *hello2.phrase);
+    printf("*hello2.phrase as char is %c\n", *hello2.phrase);
+    printf("*hello2.phrase as hex is %x\n", *hello2.phrase);
+    printf("*hello2.phrase as string causes seg fault\n");
+    printf("hello2.phrase as string is %s\n", hello2.phrase);
+    printf("hello2.phrase as hex is %x\n", hello2.phrase);
+    printf("hello2.phrase as char is %c\n\n", hello2.phrase);
+
+    printf("*(&hello2.phrase) as pointer is %p\n", *(&hello2.phrase));
+    printf("*(*(&hello2.phrase)) as pointer is %p\n", *(*(&hello2.phrase)));
+    printf("*(hello2.phrase) as pointer is %p\n", *(hello2.phrase));
+    printf("*(&hello2.phrase) as pointer is %p\n", *(&hello2.phrase));
+    printf("hello2.phrase as pointer is %p\n\n", hello2.phrase);
 }
