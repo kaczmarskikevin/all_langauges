@@ -10,4 +10,4 @@ shift 2
 
 mkdir -p /tmp/kkaczmarski-container
 
-echo $(docker run -t --cap-add=SYS_PTRACE -v /tmp/kkaczmarski-container:/tmp kaczmarskikevin/$LANG-$PROG $@)
+echo $(docker run --cap-add=SYS_PTRACE -v /tmp/kkaczmarski-container:/tmp kaczmarskikevin/$LANG-$PROG $@)
