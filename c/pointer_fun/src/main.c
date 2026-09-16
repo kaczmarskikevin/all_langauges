@@ -17,7 +17,7 @@ int main(void) {
     printf("*number_p as int is %d\n", *number_p);
     printf("number_p as int is %d\n\n", number_p);
 
-    hello_t hello = { .phrase = "hello\0"};
+    hello_t hello = { "hello"};
     
     printf("&hello.phrase as pointer is %p\n", &hello.phrase);
     printf("*hello.phrase as pointer is %p\n", *hello.phrase);
@@ -32,7 +32,7 @@ int main(void) {
     printf("*(*(&hello.phrase)) as pointer is %p\n", *(*(&hello.phrase)));
     printf("*(hello.phrase) as pointer is %p\n", *(hello.phrase));
     printf("*(&hello.phrase) as pointer is %p\n", *(&hello.phrase));
-    printf("hello.phrase as pointer is %p\n", hello.phrase);
+    printf("hello.phrase as pointer is %p\n\n", hello.phrase);
 
     hello_t hello1 = { .phrase = "hello1\0"};
     
@@ -49,5 +49,5 @@ int main(void) {
     printf("*(*(&hello1.phrase)) as pointer is %p\n", *(*(&hello1.phrase)));
     printf("*(hello1.phrase) as pointer is %p\n", *(hello1.phrase));
     printf("*(&hello1.phrase) as pointer is %p\n", *(&hello1.phrase));
-    printf("hello1.phrase as pointer is %p\n", hello1.phrase);
+    printf("hello1.phrase as pointer is %p\n\n", hello1.phrase);
 }
