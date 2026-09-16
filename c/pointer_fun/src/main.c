@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include <project.h>
 
 int main(void) {
     int number = 10;
@@ -15,4 +16,14 @@ int main(void) {
     printf("&number_p is %d!\n", &number_p);
     printf("*number_p is %d!\n", *number_p);
     printf("number_p is %d!\n", number_p);
+
+    hello_t hello = {"hello\0"};
+    
+    printf("&hello.phrase is %p!\n", &hello.phrase);
+    printf("*hello.phrase is %p!\n", *hello.phrase);
+    printf("hello.phrase is %p!\n", hello.phrase);
+    printf("&hello.phrase is %d!\n", &hello.phrase);
+    printf("*hello.phrase is %s!\n", *hello.phrase);
+    printf("hello.phrase is %d!\n", hello.phrase);
+    
 }
