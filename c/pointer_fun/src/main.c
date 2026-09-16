@@ -28,5 +28,7 @@ int main(void) {
     printf("hello.phrase as string is %s\n", hello.phrase);
     printf("hello.phrase as hex is %x\n", hello.phrase);
     printf("hello.phrase as char is %c\n\n", hello.phrase);
-    
+    printf("*(&hello.phrase) as pointer is %p\n", *(&hello.phrase));
+    printf("*(*(&hello.phrase)) as pointer is %p\n", *(*(&hello.phrase)));
+    printf("*(hello.phrase) as pointer is %p\n", *(hello.phrase));
 }
