@@ -22,5 +22,6 @@ int main(void) {
     printf("&hello.phrase is %p!\n", &hello.phrase);
     printf("*hello.phrase is %p!\n", *hello.phrase);
     printf("hello.phrase is %p!\n", hello.phrase);
+    printf("*hello.phrase is %s!\n", *hello.phrase);
     
 }
