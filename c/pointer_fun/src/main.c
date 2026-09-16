@@ -3,5 +3,9 @@ int main(void) {
     int number = 10;
 
     printf("number is %d!\n", number);
-    printf("number is %s!\n", number);
+
+    int* number_p = &number;
+
+    printf("number_p is %p!\n", number);
+    printf("number_p is %p!\n", *number);
 }
