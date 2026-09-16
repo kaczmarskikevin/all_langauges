@@ -2,6 +2,9 @@
 
 int main(void) {
 
+    // Disable all buffering for stdout
+    setvbuf(stdout, NULL, _IONBF, 0);
+
     int number = 10;
 
     printf("int number address is %p!\n", &number);
