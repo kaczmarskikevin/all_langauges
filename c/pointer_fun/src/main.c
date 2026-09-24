@@ -55,4 +55,5 @@ int main(void) {
     
     printf("&hello2.phrase as pointer is %p\n", &hello2.phrase);
     printf("hello2.phrase as pointer is %p\n", hello2.phrase);
+    printf("*hello2.phrase as pointer is %p\n", *hello2.phrase);
 }
